@@ -1,0 +1,92 @@
+.l-section-skill {
+  width: min(1100px, 92%); 
+  margin: 0 auto;
+  padding: 1.5rem 0rem;
+}
+
+.c-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 60px;
+}
+
+.c-skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 0.5rem;
+}
+
+.c-skill-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--color-standard-white);
+  padding-bottom: 0.3rem;
+}
+
+.c-skill-card__icon {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.c-skill-card__title {
+  color: var(--color-standard-white);
+  font-size: 1.1rem;
+  font-family: var(--font-main);
+  font-weight: 500;
+}
+
+.c-progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;  
+  padding: 0rem 1rem 0rem 2.5rem;
+}
+
+.c-progress-bar__labels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-standard-white);
+  font-family: var(--font-main);
+  font-weight: 300;
+}
+
+.c-progress-bar__name {
+  font-size: 0.9rem;
+}
+
+.c-progress-bar__value {
+  font-size: 0.9rem;
+}
+
+.c-progress-bar__track {
+  height: 0.3rem;
+  background-color: var(--color-card-background);
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.c-progress-bar__fill {
+  height: 100%;
+  background-color: var(--color-standard-white);
+}
+
+@media (max-width: 768px) {
+  .c-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px 60px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 834px) {
+  .c-skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+}

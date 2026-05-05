@@ -1,0 +1,53 @@
+.c-skill-bar {
+  display: flex;
+  background-color: var(--color-card-background);
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c-skill-bar--animated {
+  overflow: hidden; 
+  position: relative;
+  width: min(1100px, 92%); 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-skill-bar--animated::before,
+.c-skill-bar--animated::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.c-skill-bar--animated::before {
+  left: 0;
+  background: linear-gradient(to right, transparent);
+}
+
+.c-skill-bar--animated::after {
+  right: 0;
+  background: linear-gradient(to left, transparent);
+}
+
+.c-skill-bar__list {
+  display: flex;
+  gap: 4.7rem;
+  list-style: none;
+  flex-wrap: nowrap;
+  width: max-content;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.c-skill-bar__item {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-text-dark-gray);
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../assets/fonts/roboto-v51-latin-100.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/roboto-v51-latin-200.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/roboto-v51-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/roboto-v51-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/roboto-v51-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/roboto-v51-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/roboto-v51-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/roboto-v51-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/roboto-v51-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Slackside One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/slackside-one-v14-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/jetbrains-mono-v24-latin-regular.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+:root {
+  background-color: var(--color-main-background);
+
+  --font-main: 'Roboto', sans-serif;
+  --font-accent: 'Slackside One', cursive;
+  --font-computer: 'JetBrains Mono', sans-serif;
+
+  --color-standard-white: #FFFFFF;
+  --color-standart-black: #000000;
+  --color-main-background: #353535;
+  --color-card-background: #2B2A2A;
+  --color-card-background-hover: #232323;
+  --color-text-dark-gray: #4B4B4B;
+  --color-text-gray-hover: #979494;
+  --color-text-hyperlink: #5D9BFE;
+  --color-text-light-gray: #D2D2D2;
+  --color-charging-triangle: #FE5D61;
+  --color-white-button-hover: #BCBCBC;
+
+  --gap-menu-navegation: 1.2rem;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+}
+
+@import './modules/loader.css'; 
+
+.l-section__title {
+  color: var(--color-standard-white);
+  font-size: 3rem;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  text-align: left;
+}
+
+.l-section__title--habilities {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .l-section__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .l-section__title {
+    font-size: 2.7rem;
+  }
+}
+

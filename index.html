@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Victor Moreira | Portfólio Desenvolvedor de Software</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="victor moreira, victor, moreira, teixeira, uninove, universidade nove de julho, estudante, back-end, front-end, web, website, computador, software, desenvolvedor, engenheiro, designer, co-op" />
+    <meta name="author" content="Victor Moreira Teixeira" />
+    <meta name="description" content="Desenvolvedor de Software especializado em sistemas backend, gerenciamento de servidores e soluções personalizadas. Confira meus projetos e minha trajetória." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Segurança CSP para evitar ataques XSS (por meio de injeção de script malicioso para roubar cookies ou redirecionar usuários) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com;">
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- Preview Cards para outros aplicativos (para testar https://metatags.io/ ou https://socialsharepreview.com/) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.com.br/">
+    <meta property="og:title" content="Victor Moreira | Desenvolvedor de Software">
+    <meta property="og:description" content="Confira meus projetos de engenharia de software e desenvolvimento freelance.">
+    <meta property="og:image" content="https://seusite.com.br/frontend/public/components/assets/og-image.png">
+
+    <!-- Preview Cards para especificamente o twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://seusite.com.br/">
+    <meta property="twitter:title" content="Victor Moreira | Software Developer">
+    <meta property="twitter:description" content="Especialista em backend e sistemas escaláveis. Conheça meus projetos e experiência técnica.">
+    <meta property="twitter:image" content="https://seusite.com.br/frontend/public/components/assets/og-image.png">
+
+    <link rel="icon" type="image/x-icon" href="frontend/public/components/assets/images/favicon.ico">
+    <link rel="icon" sizes="16x16" type="image/png" href="frontend/public/components/assets/images/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="frontend/public/components/assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="frontend/public/components/assets/images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" type="image/png" href="frontend/public/components/assets/images/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" type="image/png" href="frontend/public/components/assets/images/android-chrome-512x512.png">
+
+    <link rel="stylesheet" href="frontend/public/components/styles/reset.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/main.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/loader.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/biography.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/contact.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/experience.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/footer.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/hero.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/navbar.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/projects.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/skill-bar.css">
+    <link rel="stylesheet" href="frontend/public/components/styles/modules/skills.css">
+    <script src="frontend/public/components/scripts/main.js" type="module"></script>
+    <script src="frontend/public/components/scripts/animations.js" defer></script>
+
+    <link rel="preload" href="frontend/public/components/assets/fonts/roboto-v51-latin-100.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="frontend/public/components/assets/fonts/slackside-one-v14-latin-regular.woff2" as="font"
+        type="font/woff2" crossorigin>
+</head>
+
+<body id="l-body">
+    <div id="l-loading-screen">
+        <div class="c-loader-container">
+            <span class="c-loader-text">Carregando</span>
+            <div class="c-loader-timeline">
+                <div class="c-loader-triangle"></div>
+                <div class="c-loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <section class="l-hero l-hero--with-background" id="hero">
+        <img src="frontend/public/components/assets/images/background-top-image.png" alt="Hero background" class="c-hero-background c-hero-background--overlay">
+        <header class="c-navbar">
+                <div class="c-navbar__brand">
+                    <span class="c-navbar__logo-text">Victor Moreira</span>
+                </div>
+                <button class="c-navbar__hamburger" id="hamburger">
+                    <span class="c-navbar__hamburger-line"></span>
+                    <span class="c-navbar__hamburger-line"></span>
+                    <span class="c-navbar__hamburger-line"></span>
+                </button>
+            <nav class="c-navbar__menu" id="nav-menu">
+                <ul class="c-navbar__list">
+                    <li class="c-navbar__item">
+                        <a href="#hero" class="c-navbar__link">Home</a>
+                    </li>
+                    <li class="c-navbar__item">
+                        <a href="#biography" class="c-navbar__link">Sobre Mim</a>
+                    </li>
+                    <li class="c-navbar__item">
+                        <a href="#skill" class="c-navbar__link">Habilidades</a>
+                    </li>
+                    <li class="c-navbar__item">
+                        <a href="#project" class="c-navbar__link">Projetos</a>
+                    </li>
+                    <li class="c-navbar__item">
+                        <a href="#experience" class="c-navbar__link">Experiências</a>
+                    </li>
+                    <li class="c-navbar__item">
+                        <a href="#contact" class="c-navbar__link c-navbar__link--contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="c-hero__brand">
+            <span class="c-hero__title">Bem vindo ao meu</span>
+            <h1 class="c-hero__subtitle">Portfólio</h1>
+        </div>
+    </section>
+    <div class="c-skill-bar">
+        <div class="c-skill-bar--animated">
+            <ul class="c-skill-bar__list">
+                <li class="c-skill-bar__item">JAVA</li>
+                <li class="c-skill-bar__item">HTML</li>
+                <li class="c-skill-bar__item">CSS</li>
+                <li class="c-skill-bar__item">JAVASCRIPT</li>
+                <li class="c-skill-bar__item">NODE.JS</li>
+                <li class="c-skill-bar__item">GIT</li>
+                <li class="c-skill-bar__item">GITHUB</li>
+                <li class="c-skill-bar__item">N8N</li>
+                <li class="c-skill-bar__item">LUA</li>
+            </ul>
+        </div>
+    </div>
+    <section class="l-biography" id="biography">
+        <img src="frontend/public/components/assets/images/person.png" alt="Biography Image" class="c-biography-person">
+        <div class="c-biography">
+            <span class="c-biography__title">Olá, Mundo. Prazer Victor!</span>
+            <p class="c-biography__description" style="text-align: justify;">Com 12 anos, em 2017, me perguntei por que certas coisas não existiam no jogo que eu jogava e em vez de aceitar a resposta, abri o código e fui descobrir. Foi assim que comecei: sem curso, sem guia, só curiosidade e obsessão por resolver problemas. O que nasceu como curiosidade virou 6 anos de engenharia real dentro da plataforma FiveM, onde desenvolvi e mantive servidores com mais de 2.000 usuários simultâneos, gerenciei bancos de dados sob alta concorrência e aprendi que tecnologia sem boa experiência de usuário não resolve nada. Hoje curso Ciência da Computação na UNINOVE, atuei como Tech Lead em projetos multidisciplinares e já entreguei sistemas full-stack em produção para clientes reais, com Java, JavaScript, MySQL e N8N no core. O que me move é entrar em problemas mal definidos e sair com algo que realmente funciona.</p>
+            <div class="c-biography__stats-grid">
+                <div class="c-biography__stat-item">
+                    <span class="c-biography__stat-number">4+</span>
+                    <span class="c-biography__stat-label">Anos de<br>Experiência Freelancer</span>
+                </div>
+                <div class="c-biography__stat-item">
+                    <span class="c-biography__stat-number">3+</span>
+                    <span class="c-biography__stat-label">Projetos<br>Completos</span>
+                </div>
+                <div class="c-biography__stat-item">
+                    <span class="c-biography__stat-number">20+</span>
+                    <span class="c-biography__stat-label">Clientes<br>Atendidos</span>
+                </div>
+            </div>
+            <div class="c-button-margin">
+                <a href="frontend/public/components/assets/files/Victor_Moreira_Curriculo.pdf" download="Victor_Moreira_Curriculo.pdf" class="c-button c-button--primary c-button--download">Download CV<svg class="c-button__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15L12 3M12 15L8 11M12 15L16 11M5 17L5 19C5 20.1046 5.89543 21 7 21L17 21C18.1046 21 19 20.1046 19 19L19 17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+            </div>
+        </div>
+    </section>
+    <section class="l-section-skill" id="skill">
+        <h1 class="l-section__title l-section__title--habilities">Habilidades</h1>
+        <div class="c-skill-grid">
+            <div class="c-skill-card">
+                <header class="c-skill-card__header">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-skill-card__icon"> <path d="M12 17v4" /> <path d="M8 21h8" /> <path d="m9 17 6.1-6.1a2 2 0 0 1 2.81.01L22 15" /> <circle cx="8" cy="9" r="2" /> <rect x="2" y="3" width="20" height="14" rx="2" /> </svg>
+                    <h3 class="c-skill-card__title">Desenvolvimento Front-End</h3>
+                </header>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">HTML</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">CSS</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">JavaScript</span>
+                        <span class="c-progress-bar__value">Basico</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 33.3%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-skill-card">
+                <header class="c-skill-card__header">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-skill-card__icon"> <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1" /> <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" /> </svg>
+                    <h3 class="c-skill-card__title">Desenvolvimento Back-End</h3>
+                </header>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">JAVA</span>
+                        <span class="c-progress-bar__value">Médio</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 66.6%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">LUA</span>
+                        <span class="c-progress-bar__value">Médio</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 66.6%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">C</span>
+                        <span class="c-progress-bar__value">Médio</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 66.6%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-skill-card">
+                <header class="c-skill-card__header">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-skill-card__icon"> <path d="m10.586 5.414-5.172 5.172" /> <path d="m18.586 13.414-5.172 5.172" /> <path d="M6 12h12" /> <circle cx="12" cy="20" r="2" /> <circle cx="12" cy="4" r="2" /> <circle cx="20" cy="12" r="2" /> <circle cx="4" cy="12" r="2" /> </svg>
+                    <h3 class="c-skill-card__title">Design</h3>
+                </header>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Figma</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Canva</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Photoshop</span>
+                        <span class="c-progress-bar__value">Basico</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 33.3%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-skill-card">
+                <header class="c-skill-card__header">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-skill-card__icon"> <rect width="20" height="8" x="2" y="2" rx="2" ry="2" /> <rect width="20" height="8" x="2" y="14" rx="2" ry="2" /> <line x1="6" x2="6.01" y1="6" y2="6" /> <line x1="6" x2="6.01" y1="18" y2="18" /> </svg>
+                    <h3 class="c-skill-card__title">Banco de dados</h3>
+                </header>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">MySQL</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Oracle SQL</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Modelagem de DataBase</span>
+                        <span class="c-progress-bar__value">Basico</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 33.3%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-skill-card">
+                <header class="c-skill-card__header">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-skill-card__icon"> <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /> </svg>
+                    <h3 class="c-skill-card__title">Programas</h3>
+                </header>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Apache Netbeans</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Git</span>
+                        <span class="c-progress-bar__value">Basico</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 33.3%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">GitHub</span>
+                        <span class="c-progress-bar__value">Avançado</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-skill-card">
+                <header class="c-skill-card__header">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-skill-card__icon"> <path d="M2 10v3" /> <path d="M6 6v11" /> <path d="M10 3v18" /> <path d="M14 8v7" /> <path d="M18 5v13" /> <path d="M22 10v3" /> </svg>
+                    <h3 class="c-skill-card__title">Linguas e Idiomas</h3>
+                </header>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Português</span>
+                        <span class="c-progress-bar__value">NATIVO</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Espanhol</span>
+                        <span class="c-progress-bar__value">B2</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="c-progress-bar">
+                    <div class="c-progress-bar__labels">
+                        <span class="c-progress-bar__name">Inglês</span>
+                        <span class="c-progress-bar__value">B2</span>
+                    </div>
+                    <div class="c-progress-bar__track">
+                        <div class="c-progress-bar__fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="l-section-project" id="project">
+        <h1 class="l-section__title">Projetos</h1>
+        <div class="c-project-list">
+            <div class="c-project-list--right">
+                <img src="frontend/public/components/assets/images/project-techeroi.png" alt="Project Ilustration" class="c-project-image">
+                <div class="c-project-description c-project-description--right">
+                    <span class="c-project__title">Techeroi Website</span>
+                    <span class="c-project__description c-project-description--align-right">O Techeroi permite descobrir qual área da tecnologia estudar com base no herói que te inspira. Cada personagem, como Tony Stark e Cyborg, é mapeado para cursos reais em plataformas como Alura e Udemy. Fui responsável pela liderança técnica, front-end, back-end e identidade visual do projeto</span>
+                    <a class="c-project__source-code" href="https://github.com/victormoreiraofc/techeroi-website" target="_blank" rel="noopener noreferrer">Acessar codigo-fonte do projeto</a>
+                </div>
+            </div>
+            <div class="c-project-list--left">
+                <div class="c-project-description c-project-description--left">
+                    <span class="c-project__title">Bot de Discord</span>
+                    <span class="c-project__description">O NINE é um bot para Discord desenvolvido em JavaScript com Discord.js v14, criado como projeto universitário na UNINOVE. Com 27 comandos slash implementados, cobre desde moderação de servidores até engajamento de comunidade, com sistemas de tickets, sugestões e verificação de membros. Fui responsável pela liderança técnica e pela maior parte da implementação, estruturando o projeto de forma modular para facilitar a expansão por qualquer membro da equipe</span>
+                    <a class="c-project__source-code" href="https://github.com/victormoreiraofc/nine-discord-bot" target="_blank" rel="noopener noreferrer">Acessar codigo-fonte do projeto</a>
+                </div>
+                <img src="frontend/public/components/assets/images/project-nine-bot.png" alt="Project Ilustration" class="c-project-image c-project-image--left">
+            </div>
+            <div class="c-project-list--right">
+                <img src="frontend/public/components/assets/images/project-ct-contab.png" alt="Project Ilustration" class="c-project-image">
+                <div class="c-project-description c-project-description--right">
+                    <span class="c-project__title">Gerenciador de Clientes</span>
+                    <span class="c-project__description c-project-description--align-right">Sistema de gestão de clientes desenvolvido em Java para a CT CONTAB, um escritório de contabilidade real. Cobre cadastro e busca de clientes, controle de acesso por permissões, geração de relatórios e integração com APIs de IA para automações internas, com calendário via N8N e persistência em MySQL. Atuei como Tech Lead, responsável pela arquitetura, design, documentação e desenvolvimento ao longo de um ano e meio</span>
+                    <a class="c-project__source-code" href="https://github.com/victormoreiraofc/client-manager" target="_blank" rel="noopener noreferrer">Acessar codigo-fonte do projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="l-section-experience" id="experience">
+        <h1 class="l-section__title">Experiências</h1>
+        <div class="c-experience-list">
+            <div class="c-experience-date-wrapper">
+                <span class="c-experience-date">2017-2023</span>
+            </div>
+            <div class="c-experience-timeline">
+                <div class="c-experience-circle"></div>
+                <div class="c-experience-line"></div>
+            </div>
+            <div class="c-experience-job">
+                <div class="c-experience-job__title">
+                    <span class="c-experience-title">Engenheiro de Software (Independente / Freelance)</span>
+                    <span class="c-experience-type">Freelancer / Remoto</span>
+                </div>
+                    <p class="c-experience-description">Com 12 anos e zero experiência formal, comecei modificando scripts Lua em servidores de FiveM por pura curiosidade. Com o tempo, o que era hobbie virou serviço: passei a desenvolver e manter servidores completos para clientes, escrevendo sistemas customizados, corrigindo bugs em código legado, gerenciando bancos de dados MySQL em ambientes com mais de 2.000 usuários simultâneos e criando interfaces no Figma para garantir que a experiência do usuário estivesse à altura da tecnologia por trás.</p>
+            </div>
+        </div>
+        <div class="c-experience-list">
+            <div class="c-experience-date-wrapper">
+                <span class="c-experience-date">2023-2026</span>
+            </div>
+            <div class="c-experience-timeline">
+                <div class="c-experience-circle"></div>
+                <div class="c-experience-line"></div>
+            </div>
+            <div class="c-experience-job">
+                <div class="c-experience-job__title">
+                    <span class="c-experience-title">Faculdade de Ciência da Computação</span>
+                    <span class="c-experience-type">Presencial - Universidade Nove de Julhe (UNINOVE)</span>
+                </div>
+                    <p class="c-experience-description">Na faculdade atuei como Tech Lead em projetos multidisciplinares do 2º ao 7º semestre, coordenando equipes do início ao fim do ciclo de desenvolvimento, desde o levantamento de requisitos até a entrega. Fui responsável pela arquitetura de sistemas em Java e JavaScript, consultas otimizadas em MySQL, automações com N8N e desenvolvimento de interfaces responsivas com HTML5 e CSS3, sempre equilibrando as demandas técnicas com os prazos e as pessoas do time.</p>
+            </div>
+        </div>
+    </section>
+    <section class="l-section-contact" id="contact">
+        <h1 class="l-section__title">Contato</h1>
+        <div class="l-section-contact--block">
+            <div class="c-contact-urls">
+                <ul class="c-contact-list">
+                    <li class="c-contact-item">
+                        <a href="https://www.instagram.com/thisisvictormoreira/" class="c-contact-social-midia">
+                            <span class="c-contact-social-midia--icon-wrapper">
+                                <svg class="c-contact-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/></svg>
+                            </span>
+                            <span class="c-contact-social-midia--font">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="c-contact-item">
+                        <a href="mailto:victormoreirateixeira" class="c-contact-social-midia">
+                            <span class="c-contact-social-midia--icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-contact-social-midia--icon"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                            </span>
+                            <span class="c-contact-social-midia--font">Email</span>
+                        </a>
+                    </li>
+                    <li class="c-contact-item">
+                        <a href="https://www.linkedin.com/in/victor-moreira-teixeira/" class="c-contact-social-midia">
+                            <span class="c-contact-social-midia--icon-wrapper">
+                                <svg class="c-contact-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/><path d="M7.2 8.809H4V19.5h3.2V8.809Z"/></svg>
+                            </span>
+                            <span class="c-contact-social-midia--font">Linkedin</span>
+                        </a>
+                    </li>
+                    <li class="c-contact-item">
+                        <a href="https://wa.me/5511991701884" class="c-contact-social-midia">
+                            <span class="c-contact-social-midia--icon-wrapper">
+                                <svg class="c-contact-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z" clip-rule="evenodd"/><path fill="currentColor" d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/></svg>
+                            </span>
+                            <span class="c-contact-social-midia--font">Whatsapp</span>
+                        </a>
+                    </li>
+                    <li class="c-contact-item">
+                        <a href="https://github.com/victormoreiraofc" class="c-contact-social-midia">
+                            <span class="c-contact-social-midia--icon-wrapper">
+                                <svg class="c-contact-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/></svg>
+                            </span>
+                            <span class="c-contact-social-midia--font">Github</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="c-contact-mesage" action="https://formspree.io/f/xnjwjvrp" method="POST">
+                <div class="c-contact-field">
+                    <input placeholder="Nome" type="name" required/>
+                </div>
+                <div class="c-contact-field">
+                    <input placeholder="Sobrenome" type="lastname" required/>
+                </div>
+                <div class="c-contact-field">
+                    <input placeholder="Email" type="email" required/>
+                </div>
+                <div class="c-contact-field">
+                    <textarea placeholder="Descrição" type="message" required></textarea>
+                </div>
+                <button type="submit" class="c-button c-button--primary c-button--send">Enviar Mensagem <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fast-forward-icon lucide-fast-forward"><path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z"/><path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z"/></svg></button>
+            </form>
+        </div>
+    </section>
+</body>
+<footer class="l-footer">
+    <div class="l-footer-items">
+        <div class="c-footer-credits">
+            <img src="frontend/public/components/assets/images/favicon.ico" alt="Profile Logo" class="c-footer-profile-logo">
+            <span class="c-footer-credits--copyright">Copyright © 2026 Victor Moreira Teixeira. Todos os direitos reservados.</span>
+            <div class="c-footer-social-midia">
+                <ul class="c-footer-social-midia__list">
+                    <li class="c-footer-social-midia__item">
+                        <a href="https://www.instagram.com/thisisvictormoreira/" class="c-footer-social-midia__link">
+                            <span class="c-footer-social-midia--icon-wrapper">
+                                <svg class="c-footer-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/></svg>
+                            </span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/victor-moreira-teixeira/" class="c-footer-social-midia__link">
+                            <span class="c-footer-social-midia--icon-wrapper">
+                                <svg class="c-footer-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/><path d="M7.2 8.809H4V19.5h3.2V8.809Z"/></svg>
+                            </span>
+                        </a>
+                        <a href="https://github.com/victormoreiraofc" class="c-footer-social-midia__link">
+                            <span class="c-footer-social-midia--icon-wrapper">
+                                <svg class="c-footer-social-midia--icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/></svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="c-footer-right">
+            <div class="c-footer-navbar">
+                <nav class="c-navbar__menu">
+                    <ul class="c-navbar__list">
+                        <li class="c-navbar__item">
+                            <a href="#hero" class="c-navbar__link">Home</a>
+                        </li>
+                        <li class="c-navbar__item">
+                            <a href="#biography" class="c-navbar__link">Sobre Mim</a>
+                        </li>
+                        <li class="c-navbar__item">
+                            <a href="#skill" class="c-navbar__link">Habilidades</a>
+                        </li>
+                        <li class="c-navbar__item">
+                            <a href="#project" class="c-navbar__link">Projetos</a>
+                        </li>
+                        <li class="c-navbar__item">
+                            <a href="#experience" class="c-navbar__link">Experiências</a>
+                        </li>
+                        <li class="c-navbar__item">
+                            <a href="#contact" class="c-navbar__link c-navbar__link--contact">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="c-back-to-top">
+                <div class="c-back-to-top-jump">
+                    <a class="c-back-to-top--button" href="#l-body" id="back-to-top" style="text-decoration: none;">Voltar ao topo</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="c-back-to-top--arrow"><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/><path d="M11 12h4"/><path d="M11 16h7"/><path d="M11 20h10"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
